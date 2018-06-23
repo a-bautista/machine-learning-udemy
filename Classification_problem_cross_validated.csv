@@ -1,0 +1,100 @@
+﻿Category,Problem Category,Affected Devices,Reason For Creating,Issue Status,Priority,Security Engineer
+Cybersecurity,Penetration breach,Personal user devices,Hourly Analysis,Transferred,3,Kristine Schulz
+Cybersecurity,Lack of CERT,Company main devices,Hourly Analysis,Closed,2,Uwe Frank
+IoT,Malware installed,Personal user devices,Hourly Analysis,Transferred,2,Luka Tolso
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+Cybersecurity,Compromised data,Personal user devices,Hourly Analysis,Transferred,3,Helga Fischer
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,1,Uwe Frank
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Kurt Heinz
+Cybersecurity,Compromised data,Company main devices,Hourly Analysis,Closed,3,Patrick Benz
+Cybersecurity,Compromised data,Company main devices,Hourly Analysis,Closed,3,Patrick Benz
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+Cybersecurity,DDoS attack,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Lack of CERT,Company main devices,Hourly Analysis,Closed,2,Uwe Frank
+Machine Learning,Non-filtered data,Personal user devices,Hourly Analysis,Transferred,2,Lena Wagner
+Machine Learning,Non-filtered data,Personal user devices,Hourly Analysis,Transferred,2,Lena Wagner
+Machine Learning,Non-filtered data,Personal user devices,Hourly Analysis,Transferred,2,Lena Wagner
+IoT,Malware installed,Personal user devices,Hourly Analysis,Transferred,2,Luka Tolso
+Cybersecurity,Compromised data,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Penetration breach,Personal user devices,Hourly Analysis,Transferred,3,Walter Roth
+Cybersecurity,Ransomware virus,Third party devices,Hourly Analysis,Transferred,3,Patrick Benz
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Penetration breach,Third party devices,Hourly Analysis,Transferred,2,Uwe Frank
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,3,Walter Roth
+Cybersecurity,Compromised data,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+IoT,Malware installed,Personal user devices,Hourly Analysis,Transferred,2,Luka Tolso
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Uwe Frank
+IoT,Malware installed,Personal user devices,Hourly Analysis,Transferred,3,Luka Tolso
+Cybersecurity,Compromised data,Company main devices,Hourly Analysis,Closed,3,Walter Roth
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,3,Uwe Frank
+IoT,Malware installed,Personal user devices,Hourly Analysis,Transferred,2,Luka Tolso
+Cybersecurity,Penetration breach,Personal user devices,Hourly Analysis,Transferred,3,Walter Roth
+Cybersecurity,Ransomware virus,Third party devices,Hourly Analysis,Transferred,3,Kristine Schulz
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,1,Horst Vogel
+Cybersecurity,Lack of CERT,Company main devices,Hourly Analysis,Closed,2,Uwe Frank
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Horst Vogel
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,2,Horst Vogel
+Cybersecurity,Penetration breach,Third party devices,Hourly Analysis,In Progress,2,Horst Vogel
+Cybersecurity,Compromised data,Company main devices,Hourly Analysis,Closed,2,Horst Vogel
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Johannes Dirsch
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Johannes Dirsch
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Johannes Dirsch
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Johannes Dirsch
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Johannes Dirsch
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Johannes Dirsch
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Johannes Dirsch
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Johannes Dirsch
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Johannes Dirsch
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+IoT,Compromised data,Personal user devices,Hourly Analysis,Transferred,0,Dieter Becker
+Cybersecurity,Penetration breach,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+Cybersecurity,Ransomware virus,Mobile devices,Hourly Analysis,Transferred,2,Johannes Dirsch
+Cybersecurity,Ransomware virus,Mobile devices,Hourly Analysis,Transferred,2,Johannes Dirsch
+IoT,Breach in SCADA systems,Personal user devices,Hourly Analysis,Transferred,3,Helga Fischer
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,3,Kristine Schulz
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,3,Walter Roth
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Uwe Frank
+Cybersecurity,Penetration breach,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Ransomware virus,Third party devices,Hourly Analysis,Transferred,2,Kurt Heinz
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Horst Vogel
+Machine Learning,Non-filtered data,Third party devices,Hourly Analysis,Transferred,2,Lena Wagner
+Machine Learning,Non-filtered data,Third party devices,Hourly Analysis,Transferred,2,Lena Wagner
+Cybersecurity,Ransomware virus,Third party devices,Hourly Analysis,Transferred,2,Kurt Heinz
+Cybersecurity,Ransomware virus,Third party devices,Hourly Analysis,Transferred,2,Kurt Heinz
+Cybersecurity,Compromised data,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+Cybersecurity,Penetration breach,Mobile devices,Hourly Analysis,Transferred,3,Patrick Benz
+IoT,Compromised data,Personal user devices,Hourly Analysis,Transferred,2,Dieter Becker
+IoT,Compromised data,Personal user devices,Hourly Analysis,Transferred,2,Helga Fischer
+IoT,Malware installed,Company main devices,Hourly Analysis,Closed,2,Luka Tolso
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,2,Horst Vogel
+Cybersecurity,Penetration breach,Personal user devices,Hourly Analysis,Transferred,3,Walter Roth
+IoT,Penetration breach,Personal user devices,Hourly Analysis,Transferred,3,Helga Fischer
+Cybersecurity,Penetration breach,Personal user devices,Hourly Analysis,Transferred,2,Peter Thomas
+IoT,Compromised data,Personal user devices,Hourly Analysis,Transferred,2,Yitin Nguyen
+Cybersecurity,Penetration breach,Personal user devices,Hourly Analysis,Transferred,2,Uwe Frank
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,3,Walter Roth
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Cybersecurity,Lack of CERT,Personal user devices,Hourly Analysis,Transferred,2,Uwe Frank
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,3,Kristine Schulz
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,3,Kristine Schulz
+Machine Learning,Non-filtered data,Company main devices,Hourly Analysis,Closed,3,Viktor Sauer
+IoT,Compromised data,Personal user devices,Hourly Analysis,Transferred,2,Helga Fischer
+IoT,Malware installed,Personal user devices,Hourly Analysis,Transferred,2,Luka Tolso
+Cybersecurity,Ransomware virus,Personal user devices,Hourly Analysis,Transferred,3,Kristine Schulz
+Cybersecurity,Lack of CERT,Third party devices,Hourly Analysis,Transferred,3,Peter Thomas
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,3,Walter Roth
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,3,Walter Roth
+Cybersecurity,Ransomware virus,Company main devices,Hourly Analysis,Closed,3,Walter Roth
+IoT,Penetration breach,Personal user devices,Hourly Analysis,Transferred,2,Yitin Nguyen
+Cybersecurity,Lack of CERT,Company main devices,Hourly Analysis,Closed,2,Uwe Frank
+Cybersecurity,Erroneous data load,Personal user devices,Daily Analysis,Transferred,3,Patrick Benz
+Cybersecurity,Erroneous data load,Personal user devices,Daily Analysis,Transferred,3,Patrick Benz
+Cybersecurity,Erroneous data load,Personal user devices,Daily Analysis,Transferred,3,Patrick Benz
