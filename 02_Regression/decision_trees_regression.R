@@ -6,7 +6,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 2 - Regression\\Section 8 - Decision Tree Regression\\Position_Salaries.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\02_Regression\\Position_Salaries.csv")
 dataset = dataset[2:3]
 
 # ----------------------- Fiting decision trees regression to the dataset ------------------------------ #

@@ -5,7 +5,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 1 - Data Preprocessing\\Section 2 -------------------- Part 1 - Data Preprocessing --------------------\\Data.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\01_Data_Preprocessing\\Data.csv")
 
 # ---------------------------------------------- Handle the missing values ------------------------------------ #
 

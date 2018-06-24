@@ -5,7 +5,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 2 - Regression\\Section 3 -------------------- Part 2 - Regression --------------------\\Simple_Linear_Regression\\Salary_Data.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\02_Regression\\Salary_Data.csv")
 
 # ------------------------ Splitting the dataset into Training set and Test set ------------------------------------ #
 

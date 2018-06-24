@@ -6,7 +6,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 2 - Regression\\Section 9 - Random Forest Regression\\Position_Salaries.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\02_Regression\\Position_Salaries.csv")
 dataset = dataset[2:3]
 
 # ----------------------- Fitting random forest regression to the dataset ------------------------------ #

@@ -6,24 +6,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder, PolynomialFeatures
-import statsmodels.formula.api as sm
-
+from sklearn.tree import DecisionTreeRegressor
 
 def main():
-    X, y, lin_reg, lin_reg_two, poly_reg = data_processing()
+    data_processing()
     #regressor = build_LR_model(X_train, y_train)
     #y_predict = predict_values(regressor, X_test)
     #build_optimal_linear_regression_model(X_no_column_zero, y)
-    visualize_results(X,y,lin_reg, lin_reg_two, poly_reg)
+    #visualize_results(X,y,lin_reg, lin_reg_two, poly_reg)
 
 
 def data_processing():
 
     # ---------------------------------------- Retrieve the dataset --------------------------------------------- #
-    dataset = pd.read_csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\"
-                          "Part 2 - Regression\\Section 6 - Polynomial Regression\\Position_Salaries.csv")
+    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\02_Regression\\Position_Salaries.csv")
 
     # take all the columns except the last one for your matrix of features
     # this is a vector
@@ -35,14 +31,38 @@ def data_processing():
     # define your dependent variable vector
     y = dataset.iloc[:, 2].values
 
-    # --------------------------------------- Fitting polynomial regression to the data set   ------------------------------------ #
+    # --------------------------------------- Fitting decision tree regression to the data set   ------------------------------------ #
 
-    # our matrix of features X will be transformed into a new matrix of features that will contain X squared
-    # poly reg created a columns of ones for the constant
-    poly_reg = PolynomialFeatures(degree = 4)
-    X_poly = poly_reg.fit_transform(X)
-    lin_reg_two = LinearRegression()
-    lin_reg_two.fit(X_poly, y)
+    regressor = DecisionTreeRegressor(random_state=0)
+    regressor.fit(X, y)
+    y_predict = regressor.predict(6.6)
+    print(y_predict)
+
+    # -------------------------------------- visualize the decision tree regression  Results ----------------------------- #
+
+    # You will see that the values in the graph are not adjusted to the curve because the level 10 which is the CEO
+    # is an outlier.
+    plt.scatter(X, y, color='red')
+    # The line from below contains y_predictor which is a vector and this will not be graphed against a matrix.
+    # plt.plot(X, y_predictor, color='blue')
+    plt.plot(X, regressor.predict(X), color='blue')
+    plt.title("Truth or Bluff? (Decision Tree Regression results)")
+    plt.xlabel("Position Label")
+    plt.ylabel("Salary")
+    plt.show()
+
+    # -------------------------------------- visualize the decision tree regression high resolution ----------------------------- #
+    # this how to see a non-continuous model
+    X_grid = np.arange(min(X), max(X), 0.01)
+    X_grid = X_grid.reshape((len(X_grid),1))
+    plt.scatter(X, y, color='red')
+    # The line from below contains y_predictor which is a vector and this will not be graphed against a matrix.
+    # plt.plot(X, y_predictor, color='blue')
+    plt.plot(X_grid, regressor.predict(X_grid), color='blue')
+    plt.title("Truth or Bluff? (Decision Tree Regression results)")
+    plt.xlabel("Position Label")
+    plt.ylabel("Salary")
+    plt.show()
 
     # ------------------------ Splitting the dataset into Training set and Test set ------------------------------------ #
 
@@ -65,7 +85,7 @@ def data_processing():
     # we scale the variables in our test set but we do not fit in our test set because we already fit in our training set
     # X_test = sc_X.transform(X_test)'''
 
-    return X, y, lin_reg_two, poly_reg
+
 
 
 def build_LR_model(X_train,y_train):

@@ -5,7 +5,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 2 - Regression\\Section 5 - Multiple Linear Regression\\50_Startups.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\02_Regression\\50_Startups.csv")
 
 # ---------------------------------------------- Encode the categorical data ------------------------------------ #
 

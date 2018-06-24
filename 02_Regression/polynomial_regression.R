@@ -5,43 +5,12 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 2 - Regression\\Section 6 - Polynomial Regression\\Position_Salaries.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\02_Regression\\Position_Salaries.csv")
 
 
 # ---------------------------------------------- Get columns from the dataset ------------------------------------ #
 dataset = dataset[2:3]
 
-# ---------------------------------------------- Encode the categorical data ------------------------------------ #
-'''
-dataset$State = factor(dataset$State,
-                       levels = c('New York', 'California', 'Florida'),
-                       labels = c(1,2,3))
-
-# ------------------------ Splitting the dataset into Training set and Test set ------------------------------------ #
-
-#install the caTools library for doing the split of training and testing set
-install.packages('caTools') #hit yes and yes when you see the library prompt
-
-#load the library
-library(caTools)
-
-# set the seed for random data
-set.seed(123)
-
-# split is a variable that divided the data into training and testing sets, SplitRatio = 0.8 indicates that 80% of data will go to training
-split = sample.split(dataset$Profit, SplitRatio = 0.8)
-
-# split the data into training and testing sets
-training_set = subset(dataset, split == TRUE)
-test_set = subset(dataset, split == FALSE)
-
-# ------------------------ Feature scaling ------------------------------------ #
-
-#training_set[,2:3] = scale(training_set[,2:3])
-#test_set[, 2:3] = scale(test_set[, 2:3])
-#View(training_set)
-#View(test_set)
-'''
 
 # ----------------------- Fiting Linear_Regression to the dataset ------------------ #
 

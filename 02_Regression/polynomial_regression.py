@@ -1,75 +1,54 @@
 # !Python 3.5.2
 # Author: Alejandro Bautista Ramos
 
-# SVR stands for Support Vector Regression
 # Importing the libraries
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.linear_model import LinearRegression
-from sklearn.preprocessing import StandardScaler
-from sklearn.svm import SVR
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder, PolynomialFeatures
 import statsmodels.formula.api as sm
 
 
 def main():
-    data_processing()
-    # regressor = build_LR_model(X_train, y_train)
-    # y_predict = predict_values(regressor, X_test)
-    # build_optimal_linear_regression_model(X_no_column_zero, y)
-    # visualize_results(X,y,lin_reg, lin_reg_two, poly_reg)
+    X, y, lin_reg, lin_reg_two, poly_reg = data_processing()
+    #regressor = build_LR_model(X_train, y_train)
+    #y_predict = predict_values(regressor, X_test)
+    #build_optimal_linear_regression_model(X_no_column_zero, y)
+    visualize_results(X,y,lin_reg, lin_reg_two, poly_reg)
 
 
 def data_processing():
 
     # ---------------------------------------- Retrieve the dataset --------------------------------------------- #
-    dataset = pd.read_csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 2 - Regression\\Section 7 - Support Vector Regression (SVR)\\Position_Salaries.csv")
+    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\02_Regression\\Position_Salaries.csv")
 
     # take all the columns except the last one for your matrix of features
+    # this is a vector
+    #X = dataset.iloc[:, 1].values
 
-    # matrix of features
+    # this is a matrix
     X = dataset.iloc[:, 1:2].values
 
     # define your dependent variable vector
     y = dataset.iloc[:, 2].values
 
-    # ------------------------------------------ Feature scaling ------------------------------------------------------- #
+    # --------------------------------------- Fitting linear regression to the data set   ------------------------------------ #
 
-    # Feature scaling does not apply in Linear Regression due to the libraries that we are going to use.
-    sc_X = StandardScaler()
-    sc_y = StandardScaler()
+    lin_reg = LinearRegression()
+    lin_reg.fit(X,y)
 
-    # we scale our training set variables to avoid domination of one big variable against the others and then we apply
-    # the changes with fit_transform
-    X = sc_X.fit_transform(X)
-    #convert the 1 vector to matrix
-    y = sc_y.fit_transform(np.reshape(y, (-1,1)))
+    # --------------------------------------- Fitting polynomial regression to the data set   ------------------------------------ #
 
+    # our matrix of features X will be transformed into a new matrix of features that will contain X squared
+    # poly reg created a columns of ones for the constant
+    poly_reg = PolynomialFeatures(degree = 4)
+    X_poly = poly_reg.fit_transform(X)
+    lin_reg_two = LinearRegression()
+    lin_reg_two.fit(X_poly, y)
 
-    # --------------------------------------- Fitting SVR to the data set   ------------------------------------ #
-
-    # 'rbf' --> Gaussian Kernel
-    regressor = SVR(kernel='rbf')
-    regressor.fit(X,y)
-
-    # we had to add the inverse_transform to get the original scale of the salary because our values are scaled
-    y_prediction = sc_y.inverse_transform(regressor.predict(sc_X.transform(np.reshape(6.5, (-1,1)))))
-
-    print(y_prediction)
-
-    # -------------------------------------- visualize the SVR  Results ----------------------------- #
-    # You will see that the values in the graph are not adjusted to the curve because the level 10 which is the CEO
-    # is an outlier.
-    plt.scatter(X, y, color='red')
-    # The line from below contains y_predictor which is a vector and this will not be graphed against a matrix.
-    # plt.plot(X, y_predictor, color='blue')
-    plt.plot(X, regressor.predict(X), color='blue')
-    plt.title("Truth or Bluff? (SVR)")
-    plt.xlabel("Position Label")
-    plt.ylabel("Salary")
-    plt.show()
-
-
+    return X, y, lin_reg, lin_reg_two, poly_reg
 
     # --------------------------------------- Encode the non numerical data  ------------------------------------ #
 
