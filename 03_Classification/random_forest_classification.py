@@ -18,7 +18,7 @@ def main():
 def data_processing():
 
     # ---------------------------------------- Retrieve the dataset --------------------------------------------- #
-    dataset = pd.read_csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 3 - Classification\\Section 19 - Decision Tree Classification\\Social_Network_Ads.csv")
+    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Social_Network_Ads.csv")
 
     # take all the columns except the last one for your matrix of features
     X = dataset.iloc[:, [2,3]].values

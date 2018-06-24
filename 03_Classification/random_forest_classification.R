@@ -7,7 +7,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 3 - Classification\\Section 19 - Decision Tree Classification\\Social_Network_Ads.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Social_Network_Ads.csv")
 
 dataset = dataset[,3:5]#Age, Salary and Purchased columns
 

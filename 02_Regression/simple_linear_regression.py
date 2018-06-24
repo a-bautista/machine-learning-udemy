@@ -18,7 +18,7 @@ def main():
 def data_processing():
 
     # ---------------------------------------- Retrieve the dataset --------------------------------------------- #
-    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\02_Regression\\Salary_Data.csv")
+    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Salary_Data.csv")
 
     # take all the columns except the last one for your matrix of features
     X = dataset.iloc[:, :-1].values

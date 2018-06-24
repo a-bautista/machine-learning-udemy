@@ -12,7 +12,7 @@ def main():
 
     # ------------------------ Retrieve the dataset and replace the missing values ------------------------------------ #
     # Get the data in a variable
-    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\01_Data_Preprocessing\\Data.csv")
+    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Data.csv")
 
     # Upper case letters represent Features
     # take all the columns except the last one for your matrix of features
