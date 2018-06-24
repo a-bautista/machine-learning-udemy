@@ -13,7 +13,7 @@ def main():
     # ---------------------------------------- Retrieve the dataset ------------------------------------------------ #
 
     dataset = pd.read_csv(
-        "C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 6 - Reinforcement Learning\\Section 32 - Upper Confidence Bound (UCB)\\Ads_CTR_Optimisation.csv")
+        "C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Ads_CTR_Optimisation.csv")
     random_selection_algorithm(dataset)
     ucb_algorithm(dataset)
     print("End of UCB")

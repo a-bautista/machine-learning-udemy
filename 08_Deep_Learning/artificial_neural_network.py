@@ -15,7 +15,7 @@ def main():
 def data_processing():
 
     # ---------------------------------------- Retrieve the dataset --------------------------------------------- #
-    dataset = pd.read_csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 8 - Deep Learning\\Section 39 - Artificial Neural Networks (ANN)\\Churn_Modelling.csv")
+    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Churn_Modelling.csv")
 
     # take all the columns except the last one for your matrix of features = independent variables
     X = dataset.iloc[:, 3:13].values

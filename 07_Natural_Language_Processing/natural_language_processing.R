@@ -5,7 +5,7 @@
 
 
 # ------------------------------------------ Importing the dataset ----------------------------------------------#
-dataset_original = read.delim("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 7 - Natural Language Processing\\Section 36 - Natural Language Processing\\Restaurant_Reviews.tsv",
+dataset_original = read.delim("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Restaurant_Reviews.tsv",
           quote = '', stringsAsFactors = FALSE)
 
 # ------------------------------------------ cleaning the datasets ----------------------------------------------#

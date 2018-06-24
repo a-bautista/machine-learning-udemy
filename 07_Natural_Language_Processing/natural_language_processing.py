@@ -8,12 +8,12 @@ from sklearn.feature_extraction.text import CountVectorizer
 import re
 from sklearn.metrics import confusion_matrix
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 
 
 def main():
     dataset = pd.read_csv(
-        "C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 7 - Natural Language Processing\\Section 36 - Natural Language Processing\\Restaurant_Reviews.tsv",
+        "C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Restaurant_Reviews.tsv",
         delimiter='\t', quoting=3)
     cleaned_data = clean_data(dataset)
     # quoting 3 ignores the double quotes in the dataset
@@ -62,7 +62,7 @@ def create_bag_words(dataset,cleaned_data):
     # we are going to create a bag of words or sparse matrix to put the words in columns and then the words that appear several times
     # will be counted into these columns
 
-    output = open("C:\\Users\\abautista\\Desktop\\sparse_matrix_nlp.txt",'w')
+    output = open("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\sparse_matrix_nlp.txt",'w')
     '''
 
     words-->       wow  love  terrific  disgusting

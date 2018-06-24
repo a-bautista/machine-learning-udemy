@@ -13,9 +13,9 @@ def main():
 
     # ---------------------------------------- Retrieve the dataset ------------------------------------------------ #
 
-    output = open("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 5 - Association Rule Learning\\Section 28 - Apriori\\results.txt","w+")
+    output = open("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\results.txt","w+")
     dataset = pd.read_csv(
-        "C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 5 - Association Rule Learning\\Section 28 - Apriori\\Market_Basket_Optimisation.csv", header=None)
+        "C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Market_Basket_Optimisation.csv", header=None)
 
     transactions = []
     for i in range(0, len(dataset)):

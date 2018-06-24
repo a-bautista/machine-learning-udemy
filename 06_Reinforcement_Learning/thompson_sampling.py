@@ -10,7 +10,7 @@ from math import sqrt, log
 
 def main():
     dataset = pd.read_csv(
-        "C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 6 - Reinforcement Learning\\Section 33 - Thompson Sampling\\Thompson-Sampling\\Ads_CTR_Optimisation.csv")
+        "C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Ads_CTR_Optimisation.csv")
     thompson_sampling(dataset)
 
 def thompson_sampling(dataset):

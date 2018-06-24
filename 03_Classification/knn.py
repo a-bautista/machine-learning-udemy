@@ -7,10 +7,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.cross_validation import  train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 from matplotlib.colors import ListedColormap
-from sklearn.svm import SVC
-
+from sklearn.neighbors import KNeighborsClassifier
 
 def main():
     data_processing()
@@ -19,7 +19,7 @@ def main():
 def data_processing():
 
     # ---------------------------------------- Retrieve the dataset --------------------------------------------- #
-    dataset = pd.read_csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 3 - Classification\\Section 17 - Kernel SVM\\Social_Network_Ads.csv")
+    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Social_Network_Ads.csv")
 
     # take all the columns except the last one for your matrix of features
     X = dataset.iloc[:, [2,3]].values
@@ -40,10 +40,9 @@ def data_processing():
     # we scale the variables in our test set but we do not fit in our test set because we already fit in our training set
     X_test  = sc_X.transform(X_test)
 
-    # ------------------------------------- Fitting Classifier ---------------------------------------------- #
+    # ------------------------------------- Fitting Logistic Regression ---------------------------------------------- #
 
-    'rbf is a Gaussian Kernel'
-    classifier = SVC(kernel = 'rbf', random_state = 0)
+    classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
     classifier.fit(X_train, y_train)
 
     # ----------------------------------- Predicting the Test Set Results -------------------------------------------- #
@@ -54,7 +53,7 @@ def data_processing():
 
     # ----------------------------------- Making the confusion matrix ----------------------------------------------- #
 
-    # 7 incorrect predictions
+    # this will be used for later types of classification methods
     cm = confusion_matrix(y_test, y_pred)
     print("Confusion matrix: \n",cm)
 
@@ -70,7 +69,7 @@ def data_processing():
     for i, j in enumerate(np.unique(y_set)):
         plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                     c = ListedColormap(('red', 'green'))(i), label=j)
-    plt.title('Kernel SVM - rbf option (Training Set)')
+    plt.title('KNN (Training Set)')
     plt.xlabel('Age')
     plt.ylabel('Estimated Salary')
     plt.legend()
@@ -88,7 +87,7 @@ def data_processing():
     for i, j in enumerate(np.unique(y_set)):
         plt.scatter(X_set[y_set == j, 0], X_set[y_set == j, 1],
                     c = ListedColormap(('red', 'green'))(i), label=j)
-    plt.title('Kernel SVM - rbf option (Test Set)')
+    plt.title('KNN (Test Set)')
     plt.xlabel('Age')
     plt.ylabel('Estimated Salary')
     plt.legend()

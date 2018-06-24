@@ -10,7 +10,7 @@ from sklearn.cluster import KMeans
 def main():
     # ---------------------------------------- Retrieve the dataset ------------------------------------------------ #
     dataset = pd.read_csv(
-        "C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 4 - Clustering\\Section 24 - K-Means Clustering\\Mall_Customers.csv")
+        "C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Mall_Customers.csv")
     X = dataset.iloc[:,[3,4]].values
 
     # ---------------------------------- using the Elbow method to find the optional number of clusters ------------ #

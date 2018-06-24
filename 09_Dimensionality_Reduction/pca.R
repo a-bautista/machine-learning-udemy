@@ -5,7 +5,7 @@
 
 
 # Importing the dataset
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 9 - Dimensionality Reduction\\Section 43 - Principal Component Analysis (PCA)\\Wine.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Wine.csv")
 
 # Splitting the dataset into the Training set and Test set
 # install.packages('caTools')

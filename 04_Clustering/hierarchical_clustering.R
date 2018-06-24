@@ -5,7 +5,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 4 - Clustering\\Section 24 - K-Means Clustering\\Mall_Customers.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Mall_Customers.csv")
 
 X <- dataset[4:5]#Age, Salary and Purchased columns
 

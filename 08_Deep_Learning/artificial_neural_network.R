@@ -6,7 +6,7 @@
 
 # --------------------------------------- Importing the data ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 8 - Deep Learning\\Section 39 - Artificial Neural Networks (ANN)\\Churn_Modelling.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Churn_Modelling.csv")
 View(dataset)
 dataset = dataset[4:14]
 View(dataset)

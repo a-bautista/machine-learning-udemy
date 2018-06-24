@@ -5,7 +5,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 6 - Reinforcement Learning\\Section 33 - Thompson Sampling\\Thompson-Sampling\\Ads_CTR_Optimisation.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Ads_CTR_Optimisation.csv")
 view(dataset)
 
 

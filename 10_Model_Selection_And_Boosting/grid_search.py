@@ -11,6 +11,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.metrics import confusion_matrix
 from matplotlib.colors import ListedColormap
 from sklearn.svm import SVC
+from sklearn.model_selection import GridSearchCV
 
 def main():
     data_processing()
@@ -18,7 +19,7 @@ def main():
 
 def data_processing():
     # ---------------------------------------- Retrieve the dataset --------------------------------------------- #
-    dataset = pd.read_csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 10 - Model Selection & Boosting\\Section 48 - Model Selection\\Social_Network_Ads.csv")
+    dataset = pd.read_csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Social_Network_Ads.csv")
     X = dataset.iloc[:, [2,3]].values
     y = dataset.iloc[:, 4].values
 
@@ -53,6 +54,26 @@ def data_processing():
     print("Mean value of the accuracies: ", accuracies.mean())
     print(accuracies.std())
 
+    # ----------------------------- Apply Grid search for finding the best model with the best parameters------------- #
+    #tune the parameters of the SVC model
+    parameters = [{'C':[1, 10, 100, 1000], 'kernel':['linear']}, #linear model
+                  {'C':[1, 10, 100, 1000], 'kernel':['rbf'], 'gamma': [0.5, 0.1, 0.01, 0.001]} #non-linear
+                ]
+    grid_search = GridSearchCV(estimator = classifier,
+                               param_grid = parameters,
+                               scoring = "accuracy",
+                               cv= 10, # 10 fold cross validations will be applied to the grid search, k-cross validation
+                               n_jobs = -1 # use all cpus in a large dataset
+    )
+
+    grid_search = grid_search.fit(X_train, y_train)
+
+    best_accuracy = grid_search.best_score_
+    print("Best accuracy prediction result: ",best_accuracy)
+
+    best_parameters = grid_search.best_params_
+    print("Best parameters on your model: ", best_parameters)
+    
     # ---------------------------------- Visualizing the Training set results ---------------------------------------- #
 
     X_set, y_set = X_train, y_train

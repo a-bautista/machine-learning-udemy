@@ -5,7 +5,7 @@
 
 # ---------------------------------------------- Retrieve the dataset ------------------------------------ #
 
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 4 - Clustering\\Section 24 - K-Means Clustering\\Mall_Customers.csv")
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Mall_Customers.csv")
 
 X <- dataset[4:5]#Age, Salary and Purchased columns
 
@@ -22,12 +22,13 @@ plot(1:10,wcss, type="b", main = paste("Clusters of clients"),xlab="Number of cl
 
 set.seed(29)
 kmeans <- kmeans(X,5,iter.max=300,nstart=10)
+y_kmeans = kmeans$cluster
 
 # ---------------------------------------------- Plot results  ------------------------------------ #
 
 library(cluster)
 clusplot(X,
-         y_hc,
+         y_kmeans,
          lines = 0,
          shade = TRUE,
          color = TRUE,

@@ -7,11 +7,11 @@
 
 install.packages("arules")
 library("arules")
-dataset = read.csv("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 5 - Association Rule Learning\Section 29 - Eclat\\Market_Basket_Optimisation.csv", header = FALSE)
+dataset = read.csv("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Market_Basket_Optimisation.csv", header = FALSE)
 
 # ------------------------------------- Build the sparse matrix -------------------------------------- #
 
-dataset = read.transactions("C:\\Users\\abautista\\Desktop\\Machine_Learning_AZ_Template_Folder\\Part 5 - Association Rule Learning\\Section 29 - Eclat\\Market_Basket_Optimisation.csv", sep=',',rm.duplicates = TRUE)
+dataset = read.transactions("C:\\Users\\abautista\\PycharmProjects\\Machine_Learning_000\\csv_files\\Market_Basket_Optimisation.csv", sep=',',rm.duplicates = TRUE)
 summary(dataset)
 itemFrequencyPlot(dataset,topN = 100)
 
